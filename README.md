@@ -19,3 +19,5 @@ Technologies Used
 	•	SwiftUI: For a sleek and modern user interface.
 	•	Alamofire: To handle all your networking needs effortlessly.
 	•	Spoonacular API: The brains behind our recipe recommendations.
+
+<img width="694" alt="Screenshot 2024-06-27 at 12 55 41 AM" src="https://github.com/jvenchy/Swift-Recipe-Finder/assets/70562312/01cf2bff-30cb-4107-9fe5-dea1aea47d32">
