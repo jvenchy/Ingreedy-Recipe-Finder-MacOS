@@ -20,4 +20,6 @@ Technologies Used
 	•	Alamofire: To handle all your networking needs effortlessly.
 	•	Spoonacular API: The brains behind our recipe recommendations.
 
-<img width="694" alt="Screenshot 2024-06-27 at 12 55 41 AM" src="https://github.com/jvenchy/Swift-Recipe-Finder/assets/70562312/01cf2bff-30cb-4107-9fe5-dea1aea47d32">
+
+
+<img width="692" alt="Screenshot 2024-06-27 at 12 59 01 AM" src="https://github.com/jvenchy/Swift-Recipe-Finder/assets/70562312/74e5591f-4f6e-4e17-86c0-5de21cdf8714">
