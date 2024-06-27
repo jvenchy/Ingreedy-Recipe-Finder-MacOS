@@ -10,7 +10,7 @@ Powered by the Spoonacular API, Ingreedy helps you discover mouth-watering recip
 	•	Ingredient-Based Search: Enter the ingredients you have on hand, and Ingreedy will fetch delicious recipes that match.
 	•	Dietary Preferences: From gluten-free to vegan, pick your dietary preference, and Ingreedy will find recipes that suit your needs.
 	•	Recipe Details: Tap on a recipe to get detailed instructions, ingredients, and even a pretty picture to guide you through your culinary journey.
-	•	Fallback Recipes: Even when the internet gods aren’t on our side, we’ve got your back with some delightful default recipes.
+	•	Fallback Recipes: Even when the internet gods ain’t on our side, you're sure to be covered with some delightful default recipes.
 
 **How It Works**
 
