@@ -2,8 +2,8 @@ Welcome to Ingreedy, the MacOS app that turns your kitchen chaos into culinary c
 
 Features
 
-	•	Ingredient-Based Search: Enter the ingredients you have on hand, and RecipeFinder2 will fetch delicious recipes that match.
-	•	Dietary Preferences: From gluten-free to vegan, pick your dietary preference, and we’ll find recipes that suit your needs.
+	•	Ingredient-Based Search: Enter the ingredients you have on hand, and Ingreedy will fetch delicious recipes that match.
+	•	Dietary Preferences: From gluten-free to vegan, pick your dietary preference, and Ingreedy will find recipes that suit your needs.
 	•	Recipe Details: Tap on a recipe to get detailed instructions, ingredients, and even a pretty picture to guide you through your culinary journey.
 	•	Fallback Recipes: Even when the internet gods aren’t on our side, we’ve got your back with some delightful default recipes.
 
@@ -18,7 +18,7 @@ Technologies Used
 
 	•	SwiftUI: For a sleek and modern user interface.
 	•	Alamofire: To handle all your networking needs effortlessly.
-	•	Spoonacular API: The brains behind our recipe recommendations.
+	•	Spoonacular API: The brains behind the recipe recommendations.
 
 
 
