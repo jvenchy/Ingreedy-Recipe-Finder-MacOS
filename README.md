@@ -1,9 +1,9 @@
 **Welcome to Ingreedy, the MacOS app that turns your kitchen chaos into culinary creations!** 
 
+<img width="1024" alt="Screenshot 2024-06-27 at 5 20 02 PM" src="https://github.com/jvenchy/Ingreedy-Recipe-Finder-MacOS/assets/70562312/89b731b8-1564-49ed-bd3e-575ee715c0aa">
+
+
 Powered by the Spoonacular API, Ingreedy helps you discover mouth-watering recipes tailored to the ingredients you have and your dietary preferences. 
-
-<img width="692" alt="Screenshot 2024-06-27 at 12 59 01 AM" src="https://github.com/jvenchy/Swift-Recipe-Finder/assets/70562312/74e5591f-4f6e-4e17-86c0-5de21cdf8714">
-
 
 **Features**
 
@@ -25,5 +25,6 @@ Powered by the Spoonacular API, Ingreedy helps you discover mouth-watering recip
 	•	SwiftUI: For a sleek and modern user interface.
 	•	Alamofire: To handle all your networking needs effortlessly.
 	•	Spoonacular API: The brains behind the recipe recommendations.
+
 
 
