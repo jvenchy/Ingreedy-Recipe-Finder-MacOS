@@ -90,7 +90,7 @@ struct RecipeResponse: Decodable {
     let results: [Recipe]
 }
 
-struct Recipe: Decodable, Identifiable {
+struct Recipe: Codable, Identifiable {
     let id: Int
     let title: String
     let image: String?
