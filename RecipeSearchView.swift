@@ -1,10 +1,21 @@
 import SwiftUI
+import Alamofire
+
+struct RecipeFinderApp: App {
+    var body: some Scene {
+        WindowGroup {
+            RecipeSearchView()
+        }
+    }
+}
 
 struct RecipeSearchView: View {
     @State private var ingredients: String = ""
     @State private var selectedDietaryPreference: String = "None"
     @State private var recipes: [Recipe] = []
     @State private var hasSearched: Bool = false
+    @State private var showBookmarks: Bool = false
+    @State private var bookmarkedRecipes: [Recipe] = []
 
     let dietaryPreferences = ["None", "Gluten Free", "Ketogenic", "Vegetarian", "Vegan", "Pescetarian", "Paleo"]
 
@@ -15,9 +26,12 @@ struct RecipeSearchView: View {
                     .edgesIgnoringSafeArea(.all)
 
                 VStack {
-                    Text("Cookbook Recipe Finder")
+                    Text("Ingreedy 👨🏽‍🍳")
                         .font(.largeTitle)
                         .padding(.top, 40)
+                        .foregroundColor(.brown)
+                    
+                    Text("A Cookbook Recipe Finder")
                         .foregroundColor(.brown)
                         .padding()
 
@@ -43,15 +57,27 @@ struct RecipeSearchView: View {
                         searchRecipes()
                     }) {
                         Text("Search Recipes")
-                            .fontWeight(.bold)
                             .frame(maxWidth: .infinity, alignment: .center)
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.green)
                     }
-                    .padding(.horizontal)
+                    .background(Color.blue)
                     .cornerRadius(8)
+                    .padding(.horizontal)
                     
+                    Button(action: {
+                        showBookmarks.toggle()
+                        loadBookmarkedRecipes()
+                    }) {
+                        Text("View Bookmarks")
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .padding()
+                            .foregroundColor(.white)
+                    }
+                    .background(Color.green)
+                    .cornerRadius(8)
+                    .padding(.horizontal)
+
                     if hasSearched && recipes.isEmpty {
                         Text("It's pretty empty here...")
                             .font(.headline)
@@ -100,6 +126,9 @@ struct RecipeSearchView: View {
                 }
                 .cornerRadius(15)
                 .padding()
+                .sheet(isPresented: $showBookmarks) {
+                    BookmarkedRecipesView(bookmarkedRecipes: $bookmarkedRecipes)
+                }
             }
         }
     }
@@ -116,6 +145,13 @@ struct RecipeSearchView: View {
             case .failure(let error):
                 print("Error fetching recipes: \(error)")
             }
+        }
+    }
+
+    private func loadBookmarkedRecipes() {
+        if let data = UserDefaults.standard.data(forKey: "bookmarkedRecipes"),
+           let decodedRecipes = try? JSONDecoder().decode([Recipe].self, from: data) {
+            self.bookmarkedRecipes = decodedRecipes
         }
     }
 }
